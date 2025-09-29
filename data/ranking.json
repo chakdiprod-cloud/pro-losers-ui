@@ -1,0 +1,122 @@
+[
+  {
+    "rank": 1,
+    "nick": "Player1",
+    "wins": 5,
+    "points": 590
+  },
+  {
+    "rank": 2,
+    "nick": "Player2",
+    "wins": 10,
+    "points": 580
+  },
+  {
+    "rank": 3,
+    "nick": "Player3",
+    "wins": 15,
+    "points": 570
+  },
+  {
+    "rank": 4,
+    "nick": "Player4",
+    "wins": 20,
+    "points": 560
+  },
+  {
+    "rank": 5,
+    "nick": "Player5",
+    "wins": 25,
+    "points": 550
+  },
+  {
+    "rank": 6,
+    "nick": "Player6",
+    "wins": 30,
+    "points": 540
+  },
+  {
+    "rank": 7,
+    "nick": "Player7",
+    "wins": 35,
+    "points": 530
+  },
+  {
+    "rank": 8,
+    "nick": "Player8",
+    "wins": 40,
+    "points": 520
+  },
+  {
+    "rank": 9,
+    "nick": "Player9",
+    "wins": 45,
+    "points": 510
+  },
+  {
+    "rank": 10,
+    "nick": "Player10",
+    "wins": 50,
+    "points": 500
+  },
+  {
+    "rank": 11,
+    "nick": "Player11",
+    "wins": 55,
+    "points": 490
+  },
+  {
+    "rank": 12,
+    "nick": "Player12",
+    "wins": 0,
+    "points": 480
+  },
+  {
+    "rank": 13,
+    "nick": "Player13",
+    "wins": 5,
+    "points": 470
+  },
+  {
+    "rank": 14,
+    "nick": "Player14",
+    "wins": 10,
+    "points": 460
+  },
+  {
+    "rank": 15,
+    "nick": "Player15",
+    "wins": 15,
+    "points": 450
+  },
+  {
+    "rank": 16,
+    "nick": "Player16",
+    "wins": 20,
+    "points": 440
+  },
+  {
+    "rank": 17,
+    "nick": "Player17",
+    "wins": 25,
+    "points": 430
+  },
+  {
+    "rank": 18,
+    "nick": "Player18",
+    "wins": 30,
+    "points": 420
+  },
+  {
+    "rank": 19,
+    "nick": "Player19",
+    "wins": 35,
+    "points": 410
+  },
+  {
+    "rank": 20,
+    "nick": "Player20",
+    "wins": 40,
+    "points": 400
+  }
+]

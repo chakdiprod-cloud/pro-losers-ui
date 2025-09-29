@@ -1,1 +1,1 @@
-# v5: Added /tournament page with tabs
+# v6: + Header/Footer, /ranking, /players, /players/[id]

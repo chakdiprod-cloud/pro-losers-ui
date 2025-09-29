@@ -1,0 +1,122 @@
+[
+  {
+    "id": "player1",
+    "nick": "Player1",
+    "wins": 3,
+    "points": 77
+  },
+  {
+    "id": "player2",
+    "nick": "Player2",
+    "wins": 6,
+    "points": 154
+  },
+  {
+    "id": "player3",
+    "nick": "Player3",
+    "wins": 9,
+    "points": 231
+  },
+  {
+    "id": "player4",
+    "nick": "Player4",
+    "wins": 12,
+    "points": 308
+  },
+  {
+    "id": "player5",
+    "nick": "Player5",
+    "wins": 15,
+    "points": 385
+  },
+  {
+    "id": "player6",
+    "nick": "Player6",
+    "wins": 18,
+    "points": 462
+  },
+  {
+    "id": "player7",
+    "nick": "Player7",
+    "wins": 21,
+    "points": 39
+  },
+  {
+    "id": "player8",
+    "nick": "Player8",
+    "wins": 24,
+    "points": 116
+  },
+  {
+    "id": "player9",
+    "nick": "Player9",
+    "wins": 27,
+    "points": 193
+  },
+  {
+    "id": "player10",
+    "nick": "Player10",
+    "wins": 30,
+    "points": 270
+  },
+  {
+    "id": "player11",
+    "nick": "Player11",
+    "wins": 33,
+    "points": 347
+  },
+  {
+    "id": "player12",
+    "nick": "Player12",
+    "wins": 36,
+    "points": 424
+  },
+  {
+    "id": "player13",
+    "nick": "Player13",
+    "wins": 39,
+    "points": 1
+  },
+  {
+    "id": "player14",
+    "nick": "Player14",
+    "wins": 42,
+    "points": 78
+  },
+  {
+    "id": "player15",
+    "nick": "Player15",
+    "wins": 45,
+    "points": 155
+  },
+  {
+    "id": "player16",
+    "nick": "Player16",
+    "wins": 48,
+    "points": 232
+  },
+  {
+    "id": "player17",
+    "nick": "Player17",
+    "wins": 1,
+    "points": 309
+  },
+  {
+    "id": "player18",
+    "nick": "Player18",
+    "wins": 4,
+    "points": 386
+  },
+  {
+    "id": "player19",
+    "nick": "Player19",
+    "wins": 7,
+    "points": 463
+  },
+  {
+    "id": "player20",
+    "nick": "Player20",
+    "wins": 10,
+    "points": 40
+  }
+]
