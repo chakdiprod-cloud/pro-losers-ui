@@ -1,0 +1,3 @@
+import dynamic from "next/dynamic";
+const ProLosersUI = dynamic(() => import("../components/ProLosersUI"), { ssr: false });
+export default function Page() { return <ProLosersUI />; }
