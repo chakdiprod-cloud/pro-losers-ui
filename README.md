@@ -1,1 +1,1 @@
-# Pro Losers League — v4 (fixed 'use client' + real logo)
+# v5: Added /tournament page with tabs
