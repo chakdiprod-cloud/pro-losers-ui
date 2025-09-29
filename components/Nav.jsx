@@ -1,4 +1,3 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 export default function Nav(){return(<header className="sticky top-0 z-50 backdrop-blur bg-black/30 border-b border-white/10"><div className="container flex items-center justify-between h-14"><Link className="flex items-center gap-2" href="/"><img src="/logo.png" alt="logo" className="w-8 h-8" /><span className="font-bold">Pro Losers</span></Link><nav className="flex items-center gap-5 text-sm text-gray-300"><Link className="hover:text-white" href="/tournament">Турнир</Link><Link className="hover:text-white" href="/ranking">Рейтинг</Link><Link className="hover:text-white" href="/players">Игроки</Link></nav></div></header>)}
