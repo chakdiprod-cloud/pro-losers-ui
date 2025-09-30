@@ -1,7 +1,17 @@
-# v9 — Player pages (no Telegram)
-- Registration writes to Vercel KV (players_list + player:<slug>)
-- Public list: GET /api/players
-- Player profile: GET /api/players/[slug]
-- UI: /tournament shows list and join form; /players and /players/[slug] pages
-- No Telegram integration required (code removed)
-Env needed: KV_REST_API_URL, KV_REST_API_TOKEN
+# Pro Losers UI — v10
+Next.js 14 + Tailwind. Регистрация участников, список игроков, персональные страницы.
+Хранилище: Upstash Redis (Vercel KV).
+
+## Переменные окружения
+ИСПОЛЬЗУЙ ЛЮБУЮ ПАРУ:
+- KV_REST_API_URL
+- KV_REST_API_TOKEN
+ИЛИ
+- UPSTASH_REDIS_REST_URL
+- UPSTASH_REDIS_REST_TOKEN
+
+## Проверка
+- GET /api/test-kv — проверка KV
+- /tournament — форма регистрации
+- /players — список
+- /players/[slug] — профиль
