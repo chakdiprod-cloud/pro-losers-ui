@@ -1,4 +1,7 @@
-# v7
-- + Форма заявки на участие на /tournament (вкладка «Участвовать»)
-- + API /api/register с поддержкой Telegram (переменные: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID)
-- + Улучшенная визуальная «Сетка» с линиями-коннекторами
+# v9 — Player pages (no Telegram)
+- Registration writes to Vercel KV (players_list + player:<slug>)
+- Public list: GET /api/players
+- Player profile: GET /api/players/[slug]
+- UI: /tournament shows list and join form; /players and /players/[slug] pages
+- No Telegram integration required (code removed)
+Env needed: KV_REST_API_URL, KV_REST_API_TOKEN
