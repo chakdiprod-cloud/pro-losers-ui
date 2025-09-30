@@ -1,1 +1,24 @@
-export async function POST(request){try{const body=await request.json();const {nickname,platform,contact,website,agree}=body||{};if(website)return new Response(JSON.stringify({ok:true}),{status:200});if(!nickname||!platform||!contact||!agree){return new Response(JSON.stringify({ok:false,error:"validation"}),{status:400,headers:{"Content-Type":"application/json"}})}const base=(nickname||"player").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"")||"player";const slug=`${base}-${Math.random().toString(36).slice(2,6)}`;const entry={slug,nickname,platform,contact,time:new Date().toISOString().replace('T',' ').slice(0,16),ts:Date.now()};const url=process.env.KV_REST_API_URL||process.env.UPSTASH_REDIS_REST_URL;const token=process.env.KV_REST_API_TOKEN||process.env.UPSTASH_REDIS_REST_TOKEN;if(url&&token){const val=encodeURIComponent(JSON.stringify(entry));await fetch(`${url}/lpush/players_list/${val}`,{method:"POST",headers:{Authorization:`Bearer ${token}`}});await fetch(`${url}/set/player:${slug}/${val}`,{method:"POST",headers:{Authorization:`Bearer ${token}`}})}return new Response(JSON.stringify({ok:true,slug}),{status:200,headers:{"Content-Type":"application/json"}})}catch{return new Response(JSON.stringify({ok:false,error:"bad_request"}),{status:400,headers:{"Content-Type":"application/json"}})}}
+export async function POST(request){
+  try{
+    const body=await request.json();
+    const {nickname,platform,contact,website,agree}=body||{};
+    if(website) return new Response(JSON.stringify({ok:true}),{status:200});
+    if(!nickname||!platform||!contact||!agree){
+      return new Response(JSON.stringify({ok:false,error:"validation"}),{status:400,headers:{"Content-Type":"application/json"}});
+    }
+    const url=process.env.KV_REST_API_URL||process.env.UPSTASH_REDIS_REST_URL;
+    const token=process.env.KV_REST_API_TOKEN||process.env.UPSTASH_REDIS_REST_TOKEN;
+    if(!url||!token){
+      return new Response(JSON.stringify({ok:false,error:"env_missing_kv"}),{status:500,headers:{"Content-Type":"application/json"}});
+    }
+    const base=(nickname||"player").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"")||"player";
+    const slug=`${base}-${Math.random().toString(36).slice(2,6)}`;
+    const entry={slug,nickname,platform,contact,time:new Date().toISOString().replace('T',' ').slice(0,16),ts:Date.now()};
+    const val=encodeURIComponent(JSON.stringify(entry));
+    await fetch(`${url}/lpush/players_list/${val}`,{method:"POST",headers:{Authorization:`Bearer ${token}`}});
+    await fetch(`${url}/set/player:${slug}/${val}`,{method:"POST",headers:{Authorization:`Bearer ${token}`}});
+    return new Response(JSON.stringify({ok:true,slug}),{status:200,headers:{"Content-Type":"application/json"}});
+  }catch{
+    return new Response(JSON.stringify({ok:false,error:"bad_request"}),{status:400,headers:{"Content-Type":"application/json"}});
+  }
+}
